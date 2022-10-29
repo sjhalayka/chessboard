@@ -358,8 +358,6 @@ namespace vox
 			const uint32_t& vLimitY, const uint32_t& vLimitZ, int32_t *vError);
 		static std::string GetErrnoMsg(const int32_t& vError);
 
-		std::set<vertex_3> voxels_already_set;
-
 	private:
 
 		int32_t MV_VERSION;
