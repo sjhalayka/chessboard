@@ -543,12 +543,12 @@ namespace vox
 
 	void VoxWriter::AddVoxel(const int32_t& vX, const int32_t& vY, const int32_t& vZ, const uint8_t& vColorIndex)
 	{
-		vertex_3 v(vX, vY, vZ);
-		
-		if (voxels_already_set.end() != voxels_already_set.find(v))
-			return;
-		
-		voxels_already_set.insert(v);
+		//vertex_3 v(vX, vY, vZ);
+		//
+		//if (voxels_already_set.end() != voxels_already_set.find(v))
+		//	return;
+		//
+		//voxels_already_set.insert(v);
 
 		// cube pos
 		int32_t ox = (int32_t)std::floor((double)vX / (double)m_MaxVoxelPerCubeX);
